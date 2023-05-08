@@ -1,6 +1,9 @@
+
 mod cursor;
+mod unescape;
 
 use cursor::Cursor;
+pub(crate) use unescape::unescape;
 
 #[derive(Debug)]
 pub(crate) struct Token {

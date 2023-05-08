@@ -35,11 +35,6 @@ impl<'a> Cursor<'a> {
         iter.next()
     }
 
-    /// Checks if there is nothing more to consume.
-    pub(crate) fn is_eof(&self) -> bool {
-        self.chars.as_str().is_empty()
-    }
-
     /// Returns amount of already consumed symbols.
     pub(crate) fn token_len(&self) -> u32 {
         (self.token_len_and_remaining - self.chars.as_str().len()) as u32
