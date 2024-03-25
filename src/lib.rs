@@ -1,5 +1,3 @@
-use std::io::Read;
-
 mod lexer;
 mod parser;
 
